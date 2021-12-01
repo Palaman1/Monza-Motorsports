@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>Monza Motorsports</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__top row">
+        <a href="#" class="header__top-link col-2">
+          <img src="images/logo.svg" alt="logo" class="header__top-logo">
+        </a>
+        <nav class="header__top-menu col-3">
+          <ul class="header__top-list">
+            <li class="header__top-item">
+              <a href="#">Inventory</a>
+            </li>
+            <li class="header__top-item">
+              <a href="#">Financing</a>
+            </li>
+            <li class="header__top-item">
+              <a href="#">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__top-soc col-1">
+          <a href="#" class="header__top-slink col-6" target="_blank">
+            <img src="images/icons/fb.svg" alt="Facebook">
+          </a>
+          <a href="#" class="header__top-slink col-6" target="_blank">
+            <img src="images/icons/insta.svg" alt="Instagram">
+          </a>
+        </div>
+      </div>
+      <div class="header__usp">
+        <h1 class="header__usp-title">The right way to get a car</h1>
+        <div class="header__usp-content">
+          <p class="header__usp-text">
+            Monza Motorsports is a boutique-style dealership specializing in premium imports. We offer an advanced
+            online vehicle
+            purchasing experience with integrated financing and contactless home delivery.
+          </p>
+          <p class="header__usp-text">
+            All of our cars come with a 5 day/500 kilometres no-hassle exchange option. Since 2012 Monza
+            Motorsports</br>
+            has been the benchmark for innovation in the automotive industry.
+          </p>
+        </div>
+        <a href="#" class="header__usp-btn btn">
+          Browse cars
+        </a>
+      </div>
+    </div>
+  </header>
+  <section class="current">
+    <div class="container">
+      <h2 class="current__title">
+        CURRENT OFFERS
+      </h2>
+      <div class="current__filter row">
+        <div class="current__filter-top row">
+          <select class="custom-select form-control year col-2">
+            <option selected>Year</option>
+            <option value="1">2013</option>
+            <option value="2">2014</option>
+            <option value="3">2015</option>
+            <option value="4">2016</option>
+            <option value="5">2017</option>
+            <option value="6">2018</option>
+            <option value="7">2019</option>
+          </select>
+          <select class="custom-select form-control make col-2">
+            <option selected>Make</option>
+            <option value="1">Honda</option>
+            <option value="2">Kia</option>
+            <option value="3">Toyota</option>
+            <option value="4">Volkswagen</option>
+            <option value="5">Toyota</option>
+            <option value="6">Volkswagen</option>
+            <option value="7">Honda</option>
+          </select>
+          <select class="custom-select form-control model col-2">
+            <option selected>Model</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <select class="custom-select form-control trim col-2">
+            <option selected>Trim</option>
+            <option value="1">Standart</option>
+            <option value="2">Luxury</option>
+            <option value="3">Turbo</option>
+          </select>
+          <select class="custom-select form-control mileage col-2">
+            <option selected>Mileage</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <button type="button" class="btn current__filter-btn col-2">40 cars</button>
+        </div>
+        <div class="current__filter-down row">
+          <label class="checkbox-label col-2">
+            <input class="current__filter-checkbox" type="checkbox" name="available">
+            <p class="checkbox-text">Instantly available vehicles</p>
+            <span class="checkbox-custom">
+            </span>
+          </label>
+          <div class="current__filter-down__sort col-2">
+            Sort by
+            <select class="custom-select form-control">
+              <option selected>Publication date (ascending)</option>
+              <option value="1">Publication date (descending)</option>
+              <option value="2">Price (ascending)</option>
+              <option value="3">Price (descending)</option>
+              <option value="4">Mileage (ascending)</option>
+              <option value="5">Mileage (descending)</option>
+              <option value="6">Performance (ascending)</option>
+              <option value="7">Performance (descending)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="current__content row">
+        <div class="current__content-card">
+          <img src="images/cars/001.png" alt="Volkswagen Tiguan 2019 silver" class="current__content-card__img">
+          <div class="current__content-card__text">
+            <p class="current__content-card__model">
+              <span class="year__span current__content-card__year">
+                2019
+              </span>
+              Volkswagen Tiguan
+            </p>
+            <p class="current__content-card__options">
+              19,855 km | Automatic | Diesel
+            </p>
+            <p class="current__content-card__price">
+              $34,888
+            </p>
+          </div>
+        </div>
+        <div class="current__content-card">
+          <img src="images/cars/002.png" alt="Toyota Highlander XLE 2014 gray" class="current__content-card__img">
+          <span class="current__content-card__new">
+            New
+          </span>
+          <div class="current__content-card__text">
+            <p class="current__content-card__model">
+              <span class="year__span current__content-card__year">
+                2014
+              </span>
+              Toyota Highlander XLE
+            </p>
+            <p class="current__content-card__options">
+              69,000 km | Automatic | Gas
+            </p>
+            <p class="current__content-card__price">
+              $27,875
+            </p>
+          </div>
+        </div>
+        <div class="current__content-card">
+          <img src="images/cars/003.png" alt="Lexus RX 350 LUXURY 2017 white" class="current__content-card__img">
+          <div class="current__content-card__text">
+            <p class="current__content-card__model">
+              <span class="year__span current__content-card__year">
+                2017
+              </span>
+              Lexus RX 350 LUXURY
+            </p>
+            <p class="current__content-card__options">
+              39,850 km | Automatic | Gas
+            </p>
+            <p class="current__content-card__price">
+              $38,775
+            </p>
+          </div>
+        </div>
+        <div class="current__content-card">
+          <img src="images/cars/004.png" alt="Toyota Highlander LE A... 2016 gray" class="current__content-card__img">
+          <div class="current__content-card__text">
+            <p class="current__content-card__model">
+              <span class="year__span current__content-card__year">
+                2016
+              </span>
+              Toyota Highlander LE A...
+            </p>
+            <p class="current__content-card__options">
+              104,000 km | Automatic | Gas
+            </p>
+            <p class="current__content-card__price">
+              $23,728
+            </p>
+          </div>
+        </div>
+        <div class="current__content-card">
+          <img src="images/cars/005.png" alt="Hyundai Elantra 2017 gray" class="current__content-card__img">
+          <div class="current__content-card__text">
+            <p class="current__content-card__model">
+              <span class="year__span current__content-card__year">
+                2017
+              </span>
+              Hyundai Elantra
+            </p>
+            <p class="current__content-card__options">
+              95,000 km | Automatic | Gas
+            </p>
+            <p class="current__content-card__price">
+              $11,788
+            </p>
+          </div>
+        </div>
+        <div class="current__content-card">
+          <img src="images/cars/006.png" alt="Mercedes-Benz GLE-Cl... 2016 black" class="current__content-card__img">
+          <div class="current__content-card__text">
+            <p class="current__content-card__model">
+              <span class="year__span current__content-card__year">
+                2016
+              </span>
+              Mercedes-Benz GLE-Cl...
+            </p>
+            <p class="current__content-card__options">
+              59,800 km | Automatic | Diesel
+            </p>
+            <p class="current__content-card__price">
+              $38,878
+            </p>
+          </div>
+        </div>
+        <div class="current__content-card sold">
+          <img src="images/cars/007.png" alt="Toyota Venza AWD XLE... 2015 brown" class="current__content-card__img">
+          <div class="current__content-card__text">
+            <p class="current__content-card__model">
+              <span class="year__span current__content-card__year">
+                2015
+              </span>
+              Toyota Venza AWD XLE...
+            </p>
+            <p class="current__content-card__options">
+              99.000 km | Automatic | Gas
+            </p>
+            <p class="current__content-card__price">
+              $18,620
+            </p>
+          </div>
+        </div>
+        <div class="current__content-card">
+          <img src="images/cars/008.png" alt="Lexus RX 350 F-SPORT 2016 silver" class="current__content-card__img">
+          <span class="current__content-card__new">
+            New
+          </span>
+          <div class="current__content-card__text">
+            <p class="current__content-card__model">
+              <span class="year__span current__content-card__year">
+                2016
+              </span>
+              Lexus RX 350 F-SPORT
+            </p>
+            <p class="current__content-card__options">
+              86,000 km | Automatic | Gas
+            </p>
+            <p class="current__content-card__price">
+              $34,888
+            </p>
+          </div>
+        </div>
+        <div class="current__content-card">
+          <img src="images/cars/001.png" alt="Volkswagen Tiguan 2019 silver" class="current__content-card__img">
+          <div class="current__content-card__text">
+            <p class="current__content-card__model">
+              <span class="year__span current__content-card__year">
+                2019
+              </span>
+              Volkswagen Tiguan
+            </p>
+            <p class="current__content-card__options">
+              19,855 km | Automatic | Diesel
+            </p>
+            <p class="current__content-card__price">
+              $34,888
+            </p>
+          </div>
+        </div>
+        <div class="current__content-card">
+          <img src="images/cars/002.png" alt="Toyota Highlander XLE 2014 gray" class="current__content-card__img">
+          <div class="current__content-card__text">
+            <p class="current__content-card__model">
+              <span class="year__span current__content-card__year">
+                2014
+              </span>
+              Toyota Highlander XLE
+            </p>
+            <p class="current__content-card__options">
+              69,000 km | Automatic | Gas
+            </p>
+            <p class="current__content-card__price">
+              $27,875
+            </p>
+          </div>
+        </div>
+        <div class="current__content-card">
+          <img src="images/cars/003.png" alt="Lexus RX 350 LUXURY 2017 white" class="current__content-card__img">
+          <div class="current__content-card__text">
+            <p class="current__content-card__model">
+              <span class="year__span current__content-card__year">
+                2017
+              </span>
+              Lexus RX 350 LUXURY
+            </p>
+            <p class="current__content-card__options">
+              39,850 km | Automatic | Gas
+            </p>
+            <p class="current__content-card__price">
+              $38,775
+            </p>
+          </div>
+        </div>
+        <div class="current__content-card">
+          <img src="images/cars/004.png" alt="Toyota Highlander LE A... 2016 gray" class="current__content-card__img">
+          <div class="current__content-card__text">
+            <p class="current__content-card__model">
+              <span class="year__span current__content-card__year">
+                2016
+              </span>
+              Toyota Highlander LE A...
+            </p>
+            <p class="current__content-card__options">
+              104,000 km | Automatic | Gas
+            </p>
+            <p class="current__content-card__price">
+              $23,728
+            </p>
+          </div>
+        </div>
+        <div class="current__content-card">
+          <img src="images/cars/001.png" alt="Volkswagen Tiguan 2019 silver" class="current__content-card__img">
+          <span class="current__content-card__new">
+            New
+          </span>
+          <div class="current__content-card__text">
+            <p class="current__content-card__model">
+              <span class="year__span current__content-card__year">
+                2019
+              </span>
+              Volkswagen Tiguan
+            </p>
+            <p class="current__content-card__options">
+              19,855 km | Automatic | Diesel
+            </p>
+            <p class="current__content-card__price">
+              $34,888
+            </p>
+          </div>
+        </div>
+        <div class="current__content-card">
+          <img src="images/cars/002.png" alt="Toyota Highlander XLE 2014 gray" class="current__content-card__img">
+          <div class="current__content-card__text">
+            <p class="current__content-card__model">
+              <span class="year__span current__content-card__year">
+                2014
+              </span>
+              Toyota Highlander XLE
+            </p>
+            <p class="current__content-card__options">
+              69,000 km | Automatic | Gas
+            </p>
+            <p class="current__content-card__price">
+              $27,875
+            </p>
+          </div>
+        </div>
+        <div class="current__content-card">
+          <img src="images/cars/003.png" alt="Lexus RX 350 LUXURY 2017 white" class="current__content-card__img">
+          <div class="current__content-card__text">
+            <p class="current__content-card__model">
+              <span class="year__span current__content-card__year">
+                2017
+              </span>
+              Lexus RX 350 LUXURY
+            </p>
+            <p class="current__content-card__options">
+              39,850 km | Automatic | Gas
+            </p>
+            <p class="current__content-card__price">
+              $38,775
+            </p>
+          </div>
+        </div>
+        <div class="current__content-card">
+          <img src="images/cars/004.png" alt="Toyota Highlander LE A... 2016 gray" class="current__content-card__img">
+          <div class="current__content-card__text">
+            <p class="current__content-card__model">
+              <span class="year__span current__content-card__year">
+                2016
+              </span>
+              Toyota Highlander LE A...
+            </p>
+            <p class="current__content-card__options">
+              104,000 km | Automatic | Gas
+            </p>
+            <p class="current__content-card__price">
+              $23,728
+            </p>
+          </div>
+        </div>
+        <div class="current__content-card">
+          <img src="images/cars/005.png" alt="Hyundai Elantra 2017 gray" class="current__content-card__img">
+          <div class="current__content-card__text">
+            <p class="current__content-card__model">
+              <span class="year__span current__content-card__year">
+                2017
+              </span>
+              Hyundai Elantra
+            </p>
+            <p class="current__content-card__options">
+              95,000 km | Automatic | Gas
+            </p>
+            <p class="current__content-card__price">
+              $11,788
+            </p>
+          </div>
+        </div>
+        <div class="current__content-card">
+          <img src="images/cars/006.png" alt="Mercedes-Benz GLE-Cl... 2016 black" class="current__content-card__img">
+          <div class="current__content-card__text">
+            <p class="current__content-card__model">
+              <span class="year__span current__content-card__year">
+                2016
+              </span>
+              Mercedes-Benz GLE-Cl...
+            </p>
+            <p class="current__content-card__options">
+              59,800 km | Automatic | Diesel
+            </p>
+            <p class="current__content-card__price">
+              $38,878
+            </p>
+          </div>
+        </div>
+        <div class="current__content-card">
+          <img src="images/cars/007.png" alt="Toyota Venza AWD XLE... 2015 brown" class="current__content-card__img">
+          <div class="current__content-card__text">
+            <p class="current__content-card__model">
+              <span class="year__span current__content-card__year">
+                2015
+              </span>
+              Toyota Venza AWD XLE...
+            </p>
+            <p class="current__content-card__options">
+              99.000 km | Automatic | Gas
+            </p>
+            <p class="current__content-card__price">
+              $18,620
+            </p>
+          </div>
+        </div>
+        <div class="current__content-card">
+          <img src="images/cars/008.png" alt="Lexus RX 350 F-SPORT 2016 silver" class="current__content-card__img">
+          <span class="current__content-card__new">
+            New
+          </span>
+          <div class="current__content-card__text">
+            <p class="current__content-card__model">
+              <span class="year__span current__content-card__year">
+                2016
+              </span>
+              Lexus RX 350 F-SPORT
+            </p>
+            <p class="current__content-card__options">
+              86,000 km | Automatic | Gas
+            </p>
+            <p class="current__content-card__price">
+              $34,888
+            </p>
+          </div>
+        </div>
+        <div class="current__content-card">
+          <img src="images/cars/001.png" alt="Volkswagen Tiguan 2019 silver" class="current__content-card__img">
+          <div class="current__content-card__text">
+            <p class="current__content-card__model">
+              <span class="year__span current__content-card__year">
+                2019
+              </span>
+              Volkswagen Tiguan
+            </p>
+            <p class="current__content-card__options">
+              19,855 km | Automatic | Diesel
+            </p>
+            <p class="current__content-card__price">
+              $34,888
+            </p>
+          </div>
+        </div>
+        <div class="current__content-card">
+          <img src="images/cars/002.png" alt="Toyota Highlander XLE 2014 gray" class="current__content-card__img">
+          <div class="current__content-card__text">
+            <p class="current__content-card__model">
+              <span class="year__span current__content-card__year">
+                2014
+              </span>
+              Toyota Highlander XLE
+            </p>
+            <p class="current__content-card__options">
+              69,000 km | Automatic | Gas
+            </p>
+            <p class="current__content-card__price">
+              $27,875
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="subscribe">
+    <div class="container">
+      <div class="subscribe__left">
+        <h4 class="subscribe__title">
+          Haven't found a suitable vehicle?
+        </h4>
+        <p class="subscribe__text">
+          Sign up for our newsletter and be the first to know when we publish new vehicle offers.
+        </p>
+      </div>
+      <form class="subscribe__right">
+        <input class="subscribe__input" type="email" id="mail" name="mail" placeholder="Enter your email" required>
+        <span class="error" aria-live="polite">
+        </span> 
+        <button class="subscribe__btn btn" type="submit">
+          Subscribe now
+        </button>
+      </form>
+    </div>
+  </section>
+  <section class="faq">
+    <div class="container">
+      <h2 class="faq__title">
+        POPULAR QUESTIONS
+      </h2>
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h5 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseOne">
+              1. Scope
+            </button>
+          </h5>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, deserunt in fugiat at soluta quam,
+              ullam cum ratione omnis unde veniam, quis quod ipsam! Autem vero quia quas quasi ipsam?
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h5 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
+              aria-controls="panelsStayOpen-collapseTwo">
+              2. Vehicle characteristics
+            </button>
+          </h5>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingTwo">
+            <div class="accordion-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti reprehenderit culpa sapiente atque et
+              corporis impedit sit, doloribus dolore, quisquam soluta nulla ipsum quibusdam, ut eaque. Provident et
+              praesentium eum.
+              Sed labore impedit culpa deserunt fugit? Culpa laborum enim laboriosam architecto id! Odit, facilis? Saepe
+              incidunt, rerum provident, nesciunt quis minima quidem magnam magni tempora voluptas vel nulla voluptates
+              assumenda!
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h5 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseThree">
+              3. Warranty / guarantee
+            </button>
+          </h5>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingThree">
+            <div class="accordion-body">
+              <p>
+                3.1 The statutory warranty is completely excluded to the extent permitted by law.
+              </p>
+              <p>
+                3.2 If the vehicle still has a current factory warranty, a sales representative (brand representative)
+                of the
+                manufacturer shall provide the services owed therein. If there is a factory warranty, the beginning of
+                the warranty for
+                new vehicles or vehicles with a current manufacturer's warranty is not the date of the first placing on
+                the market, but
+                the beginning of the warranty in the manufacturer's system or the contractually agreed beginning of the
+                warranty, if
+                any.
+              </p>
+              <p>
+                3.3 If there is a special warranty insurance for the vehicle, this will take the place of the material
+                warranty
+                according to section 3.1 and replace it. In this case, the General Terms and Conditions of the
+                respective warranty
+                service provider apply.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h5 class="accordion-header" id="panelsStayOpen-headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFour">
+              4. Trade-in vehicle
+            </button>
+          </h5>
+          <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingFour">
+            <div class="accordion-body">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, deserunt in fugiat at soluta quam,
+              ullam
+              cum ratione omnis unde veniam, quis quod ipsam! Autem vero quia quas quasi ipsam?
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h5 class="accordion-header" id="panelsStayOpen-headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFive">
+              5. Home Delivery
+            </button>
+          </h5>
+          <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingFive">
+            <div class="accordion-body">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, deserunt in fugiat at soluta quam,
+              ullam
+              cum ratione omnis unde veniam, quis quod ipsam! Autem vero quia quas quasi ipsam?
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h5 class="accordion-header" id="panelsStayOpen-headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseSix">
+              6. Right of return
+            </button>
+          </h5>
+          <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingSix">
+            <div class="accordion-body">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, deserunt in fugiat at soluta quam,
+              ullam
+              cum ratione omnis unde veniam, quis quod ipsam! Autem vero quia quas quasi ipsam?
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h5 class="accordion-header" id="panelsStayOpen-headingSeven">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseSeven">
+              7. Written form
+            </button>
+          </h5>
+          <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingSeven">
+            <div class="accordion-body">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, deserunt in fugiat at soluta quam,
+              ullam
+              cum ratione omnis unde veniam, quis quod ipsam! Autem vero quia quas quasi ipsam?
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h5 class="accordion-header" id="panelsStayOpen-headingEight">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseEight">
+              8. Applicable law and place of jurisdiction
+            </button>
+          </h5>
+          <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingEight">
+            <div class="accordion-body">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, deserunt in fugiat at soluta quam,
+              ullam
+              cum ratione omnis unde veniam, quis quod ipsam! Autem vero quia quas quasi ipsam?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi nemo sed dicta, quis ad fuga velit
+              error dolore dolor, mollitia quia. Debitis vitae commodi magnam molestias laudantium veritatis omnis
+              accusamus?
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <a href="#" class="footer-link">
+        <img src="images/logo.svg" alt="logo" class="footer-logo">
+      </a>
+      <nav class="footer-menu">
+        <ul class="footer-list">
+          <li class="footer-item">
+            <a href="#">Inventory</a>
+          </li>
+          <li class="hfooter-item">
+            <a href="#">Financing</a>
+          </li>
+          <li class="footer-item">
+            <a href="#">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="footer-soc">
+        <a href="#" class="footer-slink" target="_blank">
+          <img src="images/icons/fb.svg" alt="Facebook">
+        </a>
+        <a href="#" class="footer-slink" target="_blank">
+          <img src="images/icons/insta.svg" alt="Instagram">
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

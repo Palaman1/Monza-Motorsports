@@ -1,0 +1,612 @@
+/* vars */
+$white: #ffffff;
+$light: #f8f8f8;
+$black: #000000;
+$gray: #aeaeae;
+$dgrey: #bdbdbd;
+$year: #8d8d8d;
+$red: #df4e3c;
+$bottom: #c4c4c4;
+
+/* vars */
+
+/* global styles */
+
+body {
+  font-family: noto-sans, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  background-color: $light;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: $light;
+  margin-bottom: 32px;
+}
+
+h2 {
+  font-family: poppins, sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  color: $gray;
+  text-align: center;
+}
+
+select {
+  font-family: noto-sans, sans-serif;
+  font-weight: 400;  
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  &:focus-visible {
+    border-color: transparent;
+  }
+}
+
+input::-webkit-input-placeholder {
+	color: $light;
+}
+input::-moz-placeholder {
+	color: $light;
+}
+
+.container {
+  max-width: 1240px;
+}
+
+.btn {
+  border-radius: 15px;
+  font-weight: 500;
+  color: $light;
+  align-items: center;
+  transition: all 0.1s;
+  background-color: transparent;
+  &-check:focus+.btn,
+  &:focus {
+    box-shadow: 0 0 0 0;
+  }
+}
+
+.header__usp-btn,
+.current__filter-btn {
+  &__disabled {
+    opacity: 40%;;
+  }
+}
+
+.label,
+.year__span {
+  font-family: poppins, sans-serif;
+  font-weight: 400;
+}
+
+.sold {
+  filter: grayscale(100%);
+  & div{
+    opacity: 0.5;
+  }  
+  &::after {
+    content: "SOLD";
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 75px;
+    color: $white;
+    position: absolute;
+    margin: -300px 0 0 78px;
+    z-index: 3;
+  } 
+}
+
+.disabled {
+  opacity: 0.4;
+}
+
+.checkbox-disabled {
+  filter: grayscale(100%);
+}
+
+.error {
+  width  : 100%;
+  padding: 0;
+  position: absolute;
+  margin: 58px 0 0 -496px;
+  font-size: 10px;
+  color: $red;
+  box-sizing: border-box;
+}
+
+.error.active {
+  padding: 0.3em;
+}
+
+
+input:focus:invalid {
+  outline: none;
+}
+
+.row>*{
+  padding: 0;
+  margin: 0;
+}
+
+/* global styles */
+
+/* Start header */
+
+.header {
+  background: url(../images/bg.png) no-repeat center;
+  background-size: cover;
+}
+
+.header__top {
+  display: flex;
+  padding: 19px 0 18px;
+  &-menu {
+    margin-left: auto;
+  }
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    & li {
+      list-style: none;
+    }
+    & a {
+      text-decoration: none;
+      color: $light;
+    }
+  }
+  &-soc {
+    display: flex;
+    margin-left: 44px;
+    left: 0;
+  }
+}
+
+/* Start header usp */
+
+.header__usp {
+  padding: 118px 0 148px;
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 610px;
+    margin-bottom: 72px;
+  }
+  &-text {
+    width: 274px;
+    font-weight: 400;
+    color: $light;
+    margin: 0;
+  }
+  &-btn {
+    border: 2px solid $light;
+    padding: 11px 90px 13px 91px;
+    font-size: 20px;
+    width: 296px;
+    height: 56px;
+    &:hover {
+      background-color: $light;
+      border-width: 2px;
+      color: $black;
+    }
+    &:active {
+      color: $light;
+      background-color: $black;
+    }
+  }
+}
+
+
+/* End header usp */
+
+/* End header */
+
+
+/* Start current offers section */
+
+.current {
+  padding: 100px 0 120px;
+  &__title {
+    margin-bottom: 80px;
+  }
+}
+
+.current__filter {
+  margin-bottom: 24px;
+  &-top {
+    margin-bottom: 25px;
+    justify-content: space-between;
+  }
+
+  &-top select {
+    border-radius: 15px;
+    padding: 0 12px;
+    width: 170px;
+    height: 48px;
+    color: $black;
+    background-color: transparent;
+    background-image: url(../images/icons/arw.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: 138px;
+    overflow: hidden;  
+    &:focus,
+    &:focus-visible {
+      border-color: $gray;
+      box-shadow: 0 0 0 0;
+      background-color: transparent;
+    }
+  }
+  &-btn {
+    background-color: $red;
+    border-color: $red;
+    width: 22%;
+    height: 48px;
+    &:hover {
+      border-width: 2px;
+      background-color: transparent;
+    }
+  }
+}
+
+.custom-select {
+  position: relative;
+  & option {
+    background: $light;
+    &::after {
+      content: "";
+      width: 200px;
+      height: 300px;
+      position: absolute;
+      z-index: 3;
+      background: $gray;
+    }
+  }
+}
+
+.custom-select select {
+  display: none;
+}
+
+.current__filter-down {
+  justify-content: space-between;
+  font-size: 12px;
+  & label {
+    display: flex;
+    color: $dgrey;
+    & input {
+      width: 16px;
+      height: 16px;
+    }
+    & p {
+      margin-left: 28px;
+      color: $year;
+    }
+  }
+  &__sort {
+    display: flex;
+    width: 237px;
+    & select {
+      width: 180px;
+      height: 16px;
+      margin-left: 16px;
+      background: transparent;
+      border: none;
+      & option {
+        color: $black;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.checkbox-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkbox-label .checkbox-custom {
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px solid $year;
+  margin-top: -2px;
+}
+
+input:checked + .checkbox-text {
+  color: $red;
+}
+
+.checkbox-label .checkbox-custom::after {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  border-radius: 5px;
+  border: solid $white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(0deg) scale(0);
+  -ms-transform: rotate(0deg) scale(0);
+  transform: rotate(0deg) scale(0);
+  opacity: 1;
+}
+
+.checkbox-label input:checked ~ .checkbox-custom {
+  background-color: $red;
+  border-radius: 5px;
+  -webkit-transform: rotate(0deg) scale(1);
+  -ms-transform: rotate(0deg) scale(1);
+  transform: rotate(0deg) scale(1);
+  opacity: 1;
+  border: 2px solid $red;
+}
+
+.checkbox-label input:checked ~ .checkbox-custom::after {
+  -webkit-transform: rotate(45deg) scale(1);
+  -ms-transform: rotate(45deg) scale(1);
+  transform: rotate(45deg) scale(1);
+  opacity: 1;
+  width: 6px;
+  height: 10px;
+  border: solid $white;
+  border-width: 0 2px 2px 0;
+  background-color: transparent;
+  border-radius: 0;
+  margin: 0 0 0 5px;
+}
+
+.checkbox-label .checkbox-custom {
+  transition: all 0.3s ease-out;
+}
+
+.checkbox-label .checkbox-custom::after {
+  transition: all 0.3s ease-out;
+}
+
+.current__content {
+  display: grid;
+  grid-gap: 20px;
+  max-width: 1240px;
+  grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+  &-card {
+    background: $white;
+    width: 295px;
+    box-shadow: 0px 0px 18px rgba(68, 68, 68, 0.09);
+    &:hover {
+      opacity: 0.9;
+      transition: all 0.2s ease;
+    }
+    &__new {
+      position: absolute;
+      z-index: 1;
+      border-radius: 0 20px 20px 0;
+      background: $black;
+      color: $white;
+      width: 66.5px;
+      height: 24px;
+      text-align: center;
+      margin:176px 0 0 -295px;
+      padding-top: 3px;
+      font-size: 12px;
+    }
+    &__text {
+      margin: 20px 20px 35px;
+    }
+    &__model {
+      font-size: 17px;
+      color: $black;
+      margin-bottom: 13px;
+    }
+    &__year {
+      color: $year;
+    }
+    &__options {
+      font-size: 14px;
+      font-weight: 300;
+      color: $year;
+      line-height: 19px;
+      margin-bottom: 26px;
+    }
+    &__price {
+      color: $black;
+      font-size: 20px;
+      line-height: 27px;
+      font-weight: 500;
+    }
+  }
+  
+}
+
+/*
+  End Current offers section
+*/
+/*
+  Start Subscribe section
+*/
+
+.subscribe {
+  background: $black;
+  color: $light;
+  padding: 40px 0 46px;
+  & .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+  &__left {
+    max-width: 525px;
+  }
+  &__title {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 34px;
+    margin-bottom: 20px;
+  }
+  &__text {
+    max-width: 429px;
+  }
+  &__right {
+    padding-top: 23px;
+  }
+  &__input {
+    width: 505px;
+    height: 54px;
+    border: 1px solid $dgrey;
+    background: $black;
+    border-radius: 15px;
+    padding: 15px 16px 19px;
+    color: $light;
+    &:focus,
+    &:focus-visible {
+      border-color: $year;
+    }
+  }
+  &__btn {
+    font-size: 15px;
+    background: $light;
+    color: $black;
+    margin-left: 20px;
+    width: 190px;
+    height: 54px;
+    &:hover  {
+      background: $black;
+      border: 2px solid $white;
+      color: $white;
+    }
+    &:active {
+      background: $light;
+      color: $black;
+    }
+  }
+}
+/*
+  End Subscribe section
+*/
+
+/*
+  Start Popular questions section
+*/
+
+.faq {
+  margin: 120px 0 200px;
+  &__title {
+    margin-bottom: 80px;
+  }
+}
+
+.accordion {
+  width: 820px;
+  margin: 0 auto;
+  &-item {
+    border: none;
+    border-bottom: 1px solid $bottom;
+    background: transparent;
+    z-index: 1;
+  }
+  & h2,
+  button {
+    transition: all 0.3s ease;
+    &:focus,
+    &:focus-visible {
+      border-color: transparent;
+      box-shadow: none;
+    }
+  }
+  &-button {
+    background: $light;
+    padding-left: 24px;
+    z-index: 1;
+    
+  }
+  &-button:not(.collapsed) {
+    background: $white;
+    color: $red;
+    border: none;
+    box-shadow: none;
+    padding-left: 39px;
+  }
+  &-collapse {
+    background: $white;
+    margin-top: -8px;
+    box-shadow: 0 0 18px rgba(68, 68, 68, 0.09);
+    z-index: 5;
+  }
+  &-item:first-of-type .accordion-button {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  &-button::after {
+    background-image: url(../images/icons/_plus.svg);
+    background-size: 11px;
+    position: absolute;
+    right: 35px;
+  }
+  &-button:not(.collapsed)::after {
+    background-image: url(../images/icons/_minus.svg);
+    background-size: 11px;
+    margin-top: -8px;
+    right: 47px;
+  }
+  &-body {
+    padding: 16px 46px 16px 39px;
+    font-size: 13px;
+    line-height: 19px;
+    & p {      
+      max-width: 725px;
+    }  
+  }
+}
+
+
+/*
+  End Popular questions section
+*/
+/*
+  Start Footer
+*/
+
+.footer {
+  background: $black;
+  padding-top: 37px;
+  padding-bottom: 36px;
+  & .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-link {
+    margin-left: -19px;
+  }
+  &-menu {
+    margin-left: -114px;
+  }
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    width: 293px;
+    list-style: none;
+    & a {
+      text-decoration: none;
+      color: $light;
+      
+    }
+  }
+  &-soc {
+    width: 67px;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+}
+
+
+/*
+  End footer
+*/
